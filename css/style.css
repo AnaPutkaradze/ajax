@@ -1,7 +1,8 @@
 .navbar {
     display: flex;
+    padding: 30px;
     justify-content: space-around;
-    background-color:#FFE4C4;
+    background-color: darkseagreen;
 }
 
 .nav-ul {
@@ -18,32 +19,6 @@
     right: 30px;
     font-size: 25px;
     color: black;
+    display: none;
 }
 
-@media (max-width:800px){
-    .navbar-links {
-        display: none;
-    }
-
-    .toggle-button {
-        display: block;
-    }
-    .navbar{
-        flex-direction: column;
-    }
-    .nav-ul {
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: aqua;
-    }
-
-    .nav-li {
-        text-align: center;
-    }
-    
-    .navbar-links.active {
-        display: block;
-    }
-}
